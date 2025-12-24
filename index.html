@@ -191,6 +191,20 @@
       .layout{ grid-template-columns: 1fr; }
       .tabs{ justify-content:flex-start; }
     }
+    .photo-frame{
+        width: 120px;
+        height: 70px;
+        border: 1px dashed #777;
+        overflow: hidden;
+    }
+
+    .photo-frame img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;   
+    }
+
   </style>
 </head>
 
@@ -206,11 +220,11 @@
 
       <div class="photo" aria-label="Фото студента">
         <div><strong>Орієнтовний макет</strong></div>
-        <div style="border:1px dashed #777; width:120px; height:70px; display:flex; align-items:center; justify-content:center;">
+        <div style="border:1px dashed #777; width:120px; height:70px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
           <img src="images/photo.png" alt="Фото студента"
-            style="width:100%; height:100%; object-fit:cover;">
+            style="width:100%; height:auto;" />
         </div>
-        <small>(вставиш img)</small>
+        <small>(фото студента)</small>
       </div>
     </header>
 
